@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY yarn.lock .
 
 # Run the command inside your image filesystem.
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 # Add metadata to the image to describe which port the container is listening on at runtime.
 EXPOSE 8080
