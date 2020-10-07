@@ -6,7 +6,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.send(
-    "Hello from push-deploy test (frozen-lock)!!!!! --- 14<br/>" +
+    "Hello from push-deploy test (frozen-lock)!!!!! --- 17<br/>" +
       process.env.K_REVISION
   );
 });
