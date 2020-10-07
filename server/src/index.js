@@ -5,10 +5,7 @@ const port = 8080;
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send(
-    "Hello from push-deploy test (frozen-lock)!!!!! <br/>" +
-      JSON.stringify(process.env, null, 2)
-  );
+  res.send("Hello from push-deploy test (frozen-lock)!!!!! --- <br/>");
 });
 
 app.listen(port, () => {
